@@ -1,30 +1,30 @@
-<template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
-</template>
+<!DOCTYPE html>
+<html lang="en">
+  <meta>
+    <meta charset="UTF-8">
+    <title>Hello World in Vue.js</title>
+  </meta>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  <body>
+	
+    <div id="hello-world-app">
+      <h1>{{ msg }}</h1>
+    </div>
 
-nav {
-  padding: 30px;
+    <script
+      src="//cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js">
+    </script>
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+    <script>
+      new Vue({
+        el: "#hello-world-app",
+        data() {
+          return {
+            msg: "Hello World!"
+          }
+        }
+      });
+    </script>
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+  </body>
+</html>
